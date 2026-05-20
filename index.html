@@ -228,13 +228,14 @@
     }
 
     .hero-right-photo {
-      position: absolute;
-      inset: 0;
+      position: relative;
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      height: auto;
+      max-width: 100%;
+      object-fit: contain;
       object-position: center;
       opacity: 1;
+      display: block;
     }
 
     .hero-right-inner {
@@ -332,28 +333,24 @@
     .about-visual {
       position: relative;
       overflow: hidden;
-      min-height: 500px;
       display: flex;
       align-items: center;
       justify-content: center;
     }
 
     .about-visual > img {
-      position: absolute;
-      inset: 0;
       width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
+      height: auto;
+      max-width: 100%;
+      object-fit: contain;
+      display: block;
       transition: transform 0.8s ease;
     }
 
     .about-visual:hover > img { transform: scale(1.04); }
 
     .about-visual-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to bottom, rgba(13,12,10,0.1) 0%, rgba(13,12,10,0.35) 100%);
+      display: none;
     }
 
     .about-circle {
@@ -540,6 +537,9 @@
       overflow: hidden;
       position: relative;
       border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .gal-item:first-child {
@@ -721,9 +721,11 @@
     }
 
     .insta-cell {
-      aspect-ratio: 1;
       overflow: hidden;
       border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .insta-cell-bg {
@@ -850,7 +852,6 @@
       .hero-right { display: none; }
       .hero-left { padding: 140px 32px 80px; }
       .about { grid-template-columns: 1fr; }
-      .about-visual { min-height: 360px; }
       .about-content { padding: 60px 32px; }
       .services { padding: 80px 32px; }
       .services-grid { grid-template-columns: 1fr; }
@@ -1619,10 +1620,10 @@
       <a href="https://www.instagram.com/madames_garopaba/" target="_blank" class="btn-ghost">Ver no Instagram</a>
     </div>
     <div class="gallery-grid">
-      <div class="gal-item"><img src="download.jpg" alt="Cachos Madames" style="width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform 0.6s ease;"><span class="gal-label">Cachos & Volume</span></div>
-      <div class="gal-item"><img src="download__2_.jpg" alt="Coloração Madames" style="width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform 0.6s ease;"><span class="gal-label">Coloração</span></div>
-      <div class="gal-item"><img src="download__1_.jpg" alt="Finalização Madames" style="width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform 0.6s ease;"><span class="gal-label">Finalização</span></div>
-      <div class="gal-item"><img src="fachada.webp" alt="Madames Salão" style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform 0.6s ease;"><span class="gal-label">Nosso Espaço</span></div>
+      <div class="gal-item"><img src="download.jpg" alt="Cachos Madames" style="width:100%;height:auto;object-fit:contain;display:block;transition:transform 0.6s ease;"><span class="gal-label">Cachos & Volume</span></div>
+      <div class="gal-item"><img src="download__2_.jpg" alt="Coloração Madames" style="width:100%;height:auto;object-fit:contain;display:block;transition:transform 0.6s ease;"><span class="gal-label">Coloração</span></div>
+      <div class="gal-item"><img src="download__1_.jpg" alt="Finalização Madames" style="width:100%;height:auto;object-fit:contain;display:block;transition:transform 0.6s ease;"><span class="gal-label">Finalização</span></div>
+      <div class="gal-item"><img src="fachada.webp" alt="Madames Salão" style="width:100%;height:auto;object-fit:contain;display:block;transition:transform 0.6s ease;"><span class="gal-label">Nosso Espaço</span></div>
       <div class="gal-item"><div class="gal-bg gal-bg-5" style="display:flex;align-items:center;justify-content:center;"><a href="https://www.instagram.com/madames_garopaba/" target="_blank" style="color:white;text-align:center;text-decoration:none;padding:20px;"><span style="font-family:Cormorant Garamond,serif;font-style:italic;font-size:1.4rem;display:block;margin-bottom:10px;">Ver mais</span><span style="font-size:0.68rem;letter-spacing:0.3em;text-transform:uppercase;opacity:0.8;">@madames_garopaba</span></a></div><span class="gal-label"></span></div>
     </div>
   </section>
@@ -1797,10 +1798,10 @@
       <a href="https://www.instagram.com/madames_garopaba/" target="_blank" class="insta-handle">@madames_garopaba</a>
     </div>
     <div class="insta-grid fade-in">
-      <div class="insta-cell"><img src="download__1_.jpg" alt="Madames no Instagram" style="width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform 0.5s ease;"></div>
-      <div class="insta-cell"><img src="download__2_.jpg" alt="Madames no Instagram" style="width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform 0.5s ease;"></div>
-      <div class="insta-cell"><img src="download.jpg" alt="Madames no Instagram" style="width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform 0.5s ease;"></div>
-      <div class="insta-cell"><img src="fachada.webp" alt="Madames Salão" style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform 0.5s ease;"></div>
+      <div class="insta-cell"><img src="download__1_.jpg" alt="Madames no Instagram" style="width:100%;height:auto;object-fit:contain;display:block;transition:transform 0.5s ease;"></div>
+      <div class="insta-cell"><img src="download__2_.jpg" alt="Madames no Instagram" style="width:100%;height:auto;object-fit:contain;display:block;transition:transform 0.5s ease;"></div>
+      <div class="insta-cell"><img src="download.jpg" alt="Madames no Instagram" style="width:100%;height:auto;object-fit:contain;display:block;transition:transform 0.5s ease;"></div>
+      <div class="insta-cell"><img src="fachada.webp" alt="Madames Salão" style="width:100%;height:auto;object-fit:contain;display:block;transition:transform 0.5s ease;"></div>
       <div class="insta-cell" style="background:var(--gold);display:flex;align-items:center;justify-content:center;"><a href="https://www.instagram.com/madames_garopaba/" target="_blank" style="color:white;text-align:center;text-decoration:none;padding:12px;"><span style="font-size:1.8rem;display:block;">+</span><span style="font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;">Ver mais</span></a></div>
     </div>
     <a href="https://www.instagram.com/madames_garopaba/" target="_blank" class="btn-primary">Seguir no Instagram</a>
