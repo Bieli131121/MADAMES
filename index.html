@@ -237,10 +237,6 @@
       opacity: 1;
     }
 
-    .hero-right-inner {
-      display: none;
-    }
-
     .hero-big-letter {
       font-family: 'Cormorant Garamond', serif;
       font-size: 32vw;
@@ -258,15 +254,6 @@
       z-index: 2;
       text-align: center;
       color: var(--warm-white);
-    }
-
-    .hero-floater-logo {
-      font-family: 'Jost', sans-serif;
-      font-weight: 200;
-      font-size: 2.2rem;
-      letter-spacing: 0.5em;
-      text-transform: uppercase;
-      margin-bottom: 16px;
     }
 
     .hero-floater-line {
@@ -384,17 +371,6 @@
       text-align: center;
       line-height: 1.6;
       padding: 40px;
-    }
-
-    .about-number {
-      position: absolute;
-      bottom: 40px;
-      right: 40px;
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 7rem;
-      font-weight: 300;
-      color: rgba(201,144,58,0.12);
-      line-height: 1;
     }
 
     .about-content {
@@ -556,12 +532,6 @@
     .gal-item:hover .gal-bg { transform: scale(1.05); }
     .gal-item:hover img { transform: scale(1.05); }
     .insta-cell:hover img { transform: scale(1.08); }
-
-    .gal-bg-1 { background: linear-gradient(135deg, #C9903A, #8B5E2A); }
-    .gal-bg-2 { background: linear-gradient(135deg, #E0C080, #C9903A); }
-    .gal-bg-3 { background: linear-gradient(135deg, #8B5E2A, #5A3A15); }
-    .gal-bg-4 { background: linear-gradient(135deg, #D4A860, #A07030); }
-    .gal-bg-5 { background: linear-gradient(135deg, #F0D090, #C9903A); }
 
     .gal-label {
       position: absolute;
@@ -727,20 +697,6 @@
       border-radius: 16px;
     }
 
-    .insta-cell-bg {
-      width: 100%;
-      height: 100%;
-      transition: transform 0.5s ease;
-    }
-
-    .insta-cell:hover .insta-cell-bg { transform: scale(1.08); }
-
-    .ic1 { background: linear-gradient(135deg, #E5C378, #C9903A); }
-    .ic2 { background: linear-gradient(135deg, #C9903A, #A07030); }
-    .ic3 { background: linear-gradient(135deg, #D4A055, #8B5E20); }
-    .ic4 { background: linear-gradient(135deg, #F0D090, #D4A055); }
-    .ic5 { background: linear-gradient(135deg, #A07030, #6A4820); }
-
     /* ─── FOOTER ─── */
     footer {
       background: var(--black);
@@ -832,6 +788,8 @@
       gap: 5px;
       cursor: pointer;
       padding: 8px;
+      background: none;
+      border: none;
     }
 
     .hamburger span {
@@ -865,107 +823,6 @@
       .footer-top { grid-template-columns: 1fr; gap: 40px; }
       .form-row { grid-template-columns: 1fr; }
     }
-
-    /* ─── FLOATING INSTAGRAM BUTTON ─── */
-    .float-insta {
-      position: fixed;
-      bottom: 28px;
-      right: 28px;
-      z-index: 200;
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #f9ce34, #ee2a7b, #6228d7);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-      text-decoration: none;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .float-insta:hover {
-      transform: translateY(-4px) scale(1.08);
-      box-shadow: 0 8px 30px rgba(0,0,0,0.25);
-    }
-
-    .float-insta svg {
-      width: 26px;
-      height: 26px;
-      fill: white;
-    }
-
-    .float-insta-tooltip {
-      position: absolute;
-      right: 68px;
-      background: var(--black);
-      color: var(--warm-white);
-      font-family: 'Jost', sans-serif;
-      font-size: 0.68rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      padding: 8px 16px;
-      border-radius: 50px;
-      white-space: nowrap;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.3s ease;
-    }
-
-    .float-insta:hover .float-insta-tooltip {
-      opacity: 1;
-    }
-
-    /* ─── FLOATING WHATSAPP BUTTON ─── */
-    .float-wa {
-      position: fixed;
-      bottom: 28px;
-      right: 96px;
-      z-index: 200;
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      background: #25D366;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 4px 20px rgba(37,211,102,0.35);
-      text-decoration: none;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .float-wa:hover {
-      transform: translateY(-4px) scale(1.08);
-      box-shadow: 0 8px 30px rgba(37,211,102,0.45);
-    }
-
-    .float-wa svg {
-      width: 28px;
-      height: 28px;
-      fill: white;
-    }
-
-    .float-wa-tooltip {
-      position: absolute;
-      right: 68px;
-      background: var(--black);
-      color: var(--warm-white);
-      font-family: 'Jost', sans-serif;
-      font-size: 0.68rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      padding: 8px 16px;
-      border-radius: 50px;
-      white-space: nowrap;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.3s ease;
-    }
-
-    .float-wa:hover .float-wa-tooltip {
-      opacity: 1;
-    }
-
 
     /* ─── FLOATING SPEED DIAL ─── */
     .speed-dial {
@@ -1095,7 +952,7 @@
       position: fixed;
       inset: 0;
       background: rgba(13,12,10,0.97);
-      z-index: 99;
+      z-index: 500;
       flex-direction: column;
       align-items: center;
       justify-content: center;
@@ -1420,7 +1277,7 @@
       <li><a href="#contato">Contato</a></li>
     </ul>
     <a href="https://online.maapp.com.br/Madames?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnxDVeO7_FUEcxOxXf-SLgLYlGBZr6UhDCYiOXKzAuFKYWvqeYpjfcuxpbyqg_aem_V6aGi_lattn0_r-o7FbYsA" target="_blank" class="nav-cta">Agendar</a>
-    <div class="hamburger"><span></span><span></span><span></span></div>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </nav>
 
 
@@ -1684,24 +1541,17 @@
         Venha nos visitar em Garopaba e experimente um atendimento exclusivo. Agendamentos também pelo WhatsApp e Instagram.
       </p>
       <div class="booking-detail">
-        <div class="booking-detail-icon">📍</div>
-        <div class="booking-detail-text">
-          <span class="booking-detail-label">Localização</span>
-          <span class="booking-detail-value">Garopaba, Santa Catarina</span>
-        </div>
-      </div>
-      <div class="booking-detail">
-        <div class="booking-detail-icon">⏰</div>
-        <div class="booking-detail-text">
-          <span class="booking-detail-label">Horário de Atendimento</span>
-          <span class="booking-detail-value">Seg–Sex: 9h às 19h · Sáb: 9h às 17h</span>
-        </div>
-      </div>
-      <div class="booking-detail">
         <div class="booking-detail-icon">📸</div>
         <div class="booking-detail-text">
           <span class="booking-detail-label">Instagram</span>
           <span class="booking-detail-value">@madames_garopaba</span>
+        </div>
+      </div>
+      <div class="booking-detail">
+        <div class="booking-detail-icon">💬</div>
+        <div class="booking-detail-text">
+          <span class="booking-detail-label">WhatsApp</span>
+          <span class="booking-detail-value">(48) 99193-9492</span>
         </div>
       </div>
     </div>
@@ -1773,8 +1623,15 @@
       <div class="map-detail">
         <span class="map-detail-icon">📱</span>
         <div class="map-detail-text">
-          <span class="map-detail-label">Telefone / WhatsApp</span>
+          <span class="map-detail-label">WhatsApp</span>
           <span class="map-detail-value">(48) 99193-9492</span>
+        </div>
+      </div>
+      <div class="map-detail">
+        <span class="map-detail-icon">📸</span>
+        <div class="map-detail-text">
+          <span class="map-detail-label">Instagram</span>
+          <span class="map-detail-value">@madames_garopaba</span>
         </div>
       </div>
       <a href="https://wa.me/5548991939492" target="_blank" class="btn-primary" style="margin-top:8px; display:inline-block;">Falar pelo WhatsApp</a>
@@ -1867,11 +1724,14 @@
     // Nav scroll shrink
     window.addEventListener('scroll', () => {
       const nav = document.querySelector('nav');
-      nav.style.padding = window.scrollY > 40 ? '16px 60px' : '28px 60px';
+      const isMobile = window.innerWidth <= 1024;
+      nav.style.padding = window.scrollY > 40
+        ? (isMobile ? '14px 24px' : '16px 60px')
+        : (isMobile ? '20px 24px' : '28px 60px');
     });
 
     // Mobile menu
-    const hamburger = document.querySelector('.hamburger');
+    const hamburger = document.getElementById('hamburgerBtn');
     const mobileMenu = document.getElementById('mobileMenu');
     const menuClose = document.getElementById('menuClose');
 
@@ -1918,8 +1778,17 @@
 
     const statsSection = document.querySelector('.stats');
     if (statsSection) statsObserver.observe(statsSection);
-  </script>
+    document.getElementById('speedDialToggle').addEventListener('click', function(e) {
+      e.stopPropagation();
+      document.getElementById('speedDial').classList.toggle('open');
+    });
 
+    // Close speed dial on outside click
+    document.addEventListener('click', function(e) {
+      const dial = document.getElementById('speedDial');
+      if (!dial.contains(e.target)) dial.classList.remove('open');
+    });
+  </script>
 
   <!-- SPEED DIAL -->
   <div class="speed-dial" id="speedDial">
@@ -1952,18 +1821,6 @@
       <svg viewBox="0 0 24 24"><path d="M19 13H13v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
     </button>
   </div>
-
-  <script>
-    document.getElementById('speedDialToggle').addEventListener('click', function() {
-      document.getElementById('speedDial').classList.toggle('open');
-    });
-
-    // Close on outside click
-    document.addEventListener('click', function(e) {
-      const dial = document.getElementById('speedDial');
-      if (!dial.contains(e.target)) dial.classList.remove('open');
-    });
-  </script>
 
 </body>
 </html>
