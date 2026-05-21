@@ -767,6 +767,37 @@
       align-items: center;
       font-size: 0.72rem;
       letter-spacing: 0.1em;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-dev {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      opacity: 0.6;
+      transition: opacity 0.3s;
+      text-decoration: none;
+    }
+    .footer-dev:hover { opacity: 1; }
+    .footer-dev img {
+      height: 22px;
+      width: auto;
+      filter: brightness(0) invert(1);
+      opacity: 0.75;
+    }
+    .footer-dev-text {
+      font-size: 0.62rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(250,247,242,0.5);
+      line-height: 1.4;
+    }
+    .footer-dev-text span {
+      display: block;
+      font-size: 0.58rem;
+      letter-spacing: 0.1em;
+      opacity: 0.7;
     }
 
     /* ─── ANIMATIONS ─── */
@@ -1678,7 +1709,13 @@
     </div>
     <div class="footer-bottom">
       <span>© 2026 Madames Salão de Beleza</span>
-      <span style="color: rgba(201,144,58,0.5); font-style: italic; font-family: 'Cormorant Garamond', serif;">Garopaba, Santa Catarina</span>
+      <a href="#" class="footer-dev" title="Desenvolvido por TecchTI — Soluções de Informática">
+        <div class="footer-dev-text">
+          Desenvolvido por
+          <span>TecchTI · Soluções de Informática</span>
+        </div>
+        <img src="techti-logo.png" alt="TecchTI Soluções de Informática">
+      </a>
     </div>
   </footer>
 
