@@ -1,0 +1,10 @@
+# Arquivos temporários do sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Backups
+index_orig.html
+index_improved.html
+*.bak
+*.zip

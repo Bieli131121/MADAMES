@@ -8,23 +8,41 @@ Site do salão de beleza **Madames**, localizado em Garopaba, SC.
 |---|---|
 | `index.html` | Página principal do site |
 | `logo.png` | Logo do salão |
-| `fachada.webp` | Foto da fachada |
-| `download.jpg` | Foto trabalho — cachos |
-| `download__1_.jpg` | Foto trabalho — finalização |
-| `download__2_.jpg` | Foto trabalho — coloração |
+| `fachada.jpg` | Foto da fachada (hero) |
+| `fachada.webp` | Foto da fachada (WebP) |
+| `interior.webp` | Foto do interior do salão |
+| `cachos.jpg` | Galeria — cachos & volume |
+| `coloracao.jpg` | Galeria — coloração |
+| `escova.jpg` | Galeria — escova & corte |
+| `finalizacao.jpg` | Galeria — finalização |
+| `movimento.jpg` | Galeria — leve & com movimento |
 
-## Como hospedar
+## Como subir no GitHub + hospedar grátis
 
-### Netlify (recomendado — gratuito)
-1. Acesse [netlify.com](https://netlify.com)
-2. Arraste a pasta inteira para o deploy
-3. Site no ar em segundos!
+### 1. Criar repositório no GitHub
+```bash
+git init
+git add .
+git commit -m "primeiro commit"
+git branch -M main
+git remote add origin https://github.com/SEU-USUARIO/madames-site.git
+git push -u origin main
+```
 
-### GitHub Pages
-1. Suba esta pasta para um repositório GitHub
+### 2. Ativar GitHub Pages
+1. Acesse o repositório no GitHub
 2. Vá em **Settings → Pages**
-3. Selecione a branch `main` e pasta `/root`
-4. Acesse em `https://seu-usuario.github.io/nome-do-repo`
+3. Em *Source*, selecione **Deploy from a branch**
+4. Selecione a branch `main` e pasta `/ (root)`
+5. Clique em **Save**
+6. Site no ar em alguns minutos em: `https://SEU-USUARIO.github.io/madames-site`
+
+### Netlify (alternativa — ainda mais fácil)
+1. Acesse [netlify.com](https://netlify.com) e faça login com GitHub
+2. Clique em **Add new site → Import an existing project**
+3. Selecione o repositório `madames-site`
+4. Clique em **Deploy** — pronto!
+5. Você ganha um domínio grátis como `madames-site.netlify.app`
 
 ## Contato
 - Instagram: [@madames_garopaba](https://www.instagram.com/madames_garopaba/)
